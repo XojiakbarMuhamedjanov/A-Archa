@@ -1,0 +1,291 @@
+@import './fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+body {
+    background: #a8cecb;
+}
+
+.header {
+    background-color: rgb(143, 229, 215);
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__1140 {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 150px;
+    width: 100%;
+    height: 100px;
+}
+
+.header__list {
+    display: flex;
+    gap: 2px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__list_lniks a {
+    padding: 10px;
+    border-radius: 7px;
+    transition: 1s;
+    color: aliceblue;
+}
+
+.logins {
+    display: flex;
+    gap: 5px;
+    margin-right: 50px;
+}
+
+.logins__links {
+    position: relative;
+    transition: 0.5s;
+}
+
+.logins__links a {
+    padding: 10px;
+    border-radius: 7px;
+    transition: 1s;
+    color: aliceblue;
+}
+
+.header__list_lniks a:hover,
+.logins__links a:hover {
+    background: aliceblue;
+    color: rgb(143, 229, 215);
+}
+
+.logins__links_right a {
+    color: #e28743;
+    border: 1px solid #eeeee4;
+    padding: 7px;
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.logins__links_right a:hover {
+    border-color: #e28743;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    background: rgb(143, 229, 215);
+    border-radius: 7px;
+}
+
+.dropdown-content a {
+    color: aliceblue;
+}
+
+.logins__links:hover .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opening__right {
+    position: relative;
+    margin-top: 80px;
+}
+
+.ariana {
+    position: absolute;
+    top: 120px;
+    left: -190px;
+    z-index: 3;
+    max-width: 230px;
+    width: 100%;
+    height: 330px;
+    border-radius: 15px;
+}
+
+.depp {
+    /* position: absolute; */
+    z-index: 2;
+    max-width: 350px;
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.opening__text {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opening p span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.opening h1 {
+    max-width: 450px;
+    font-size: 40px;
+}
+
+.choose {
+    max-width: 220px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    background: #e28743;
+    color: aliceblue;
+    padding: 12px 20px;
+    transition: .5s;
+}
+
+.choose:hover {
+    background: #ca7a3c;
+    cursor: pointer;
+}
+
+.opening__subtext {
+    max-width: 450px;
+    width: 100%;
+    color: #646464;
+}
+
+.staff {
+    margin-top: 50px;
+    text-align: center;
+    flex-direction: column;
+    gap: 35px;
+    background: aliceblue;
+    border-radius: 25px;
+    margin-bottom: 200px;
+    padding: 40px 0;
+}
+
+.staff__title {
+    max-width: 750px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.staff__bycase {
+    max-width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.staff__bycase_text {
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    background: #e0e0e0;
+    color: #2c007e;
+    transition: .6s;
+}
+
+.staff__bycase_text:hover {
+    cursor: pointer;
+    background: #b4b4b4;
+}
+
+.active {
+    background: #2c007e;
+    color: aliceblue;
+}
+
+.active:hover {
+    cursor: auto;
+    background: #2c007e;
+    color: aliceblue;
+}
+
+.staff__info {
+    display: flex;
+    gap: 10px;
+}
+
+.stuff__info_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.stuff__info_item span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 210px;
+    height: 100%;
+    background: rgba(75, 72, 72, 0.3);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.stuff__info_item img {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.staff__info_title {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    left: 15px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.staff__info_exp {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    left: 15px;
+    z-index: 2;
+}
+
+.staff__subtitle span {
+    color: #ca7a3c;
+}
